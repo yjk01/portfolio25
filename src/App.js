@@ -63,7 +63,7 @@ function App() {
             <div className="underline"></div>
             
             <p className="about-text">
-              Hi! I'm Jun Kim, an aspiring IT professional with a passion for creating innovative solutions. With a strong foundation in computer science and a keen eye for detail, I thrive on transforming ideas into reality through technology.
+              Hola! I'm Jun Kim, an aspiring IT professional with a passion for creating innovative solutions. With a strong foundation in computer science and a keen eye for detail, I thrive on transforming ideas into reality through technology.
             </p>
             
             <p className="about-text">
