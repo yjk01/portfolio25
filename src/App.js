@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import { FaGithub, FaLinkedin, FaGoogle, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaPython, FaJsSquare, FaGitAlt, FaGraduationCap } from 'react-icons/fa';
-import { SiFlutter, SiFirebase, SiJira, SiPostman } from 'react-icons/si';
-import { DiReact } from 'react-icons/di';
-import { BsFillPencilFill } from 'react-icons/bs';
+import { FaGithub, FaLinkedin, FaGoogle, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import logo from './Yejun_headshot.jpg';
 
+// Import section components
+import AboutSection from './components/AboutSection';
+import ResumeSection from './components/ResumeSection';
+import PortfolioSection from './components/PortfolioSection';
+import PhotosSection from './components/PhotosSection';
+import ServicesSection from './components/ServicesSection';
+import SkillsSection from './components/SkillsSection';
+
 function App() {
+  // State to track the active section
+  const [activeSection, setActiveSection] = useState('about');
+
+  // Function to handle navigation clicks
+  const handleNavClick = (e, section) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    setActiveSection(section);
+  };
+
+  // Scroll to the active section when it changes
+  useEffect(() => {
+    const sectionElement = document.getElementById(activeSection);
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [activeSection]);
+
   return (
     <div className="app-container">
       <div className="portfolio-container">
@@ -51,145 +73,35 @@ function App() {
         <div className="main-content">
           <nav className="navigation">
             <ul>
-              <li className="active"><a href="#about">About</a></li>
-              <li><a href="#resume">Resume</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#photos">Photos</a></li>
+              <li className={activeSection === 'about' ? 'active' : ''}>
+                <a href="#" onClick={(e) => handleNavClick(e, 'about')}>About</a>
+              </li>
+              <li className={activeSection === 'resume' ? 'active' : ''}>
+                <a href="#" onClick={(e) => handleNavClick(e, 'resume')}>Resume</a>
+              </li>
+              <li className={activeSection === 'portfolio' ? 'active' : ''}>
+                <a href="#" onClick={(e) => handleNavClick(e, 'portfolio')}>Portfolio</a>
+              </li>
+              <li className={activeSection === 'photos' ? 'active' : ''}>
+                <a href="#" onClick={(e) => handleNavClick(e, 'photos')}>Photos</a>
+              </li>
             </ul>
           </nav>
           
-          <section className="about-section" id="about">
-            <h2 className="section-title">About Me</h2>
-            <div className="underline"></div>
+          <div className="sections-container">
+            {/* Show only the active section */}
+            {activeSection === 'about' && (
+              <>
+                <AboutSection />
+                <ServicesSection />
+                <SkillsSection />
+              </>
+            )}
             
-            <p className="about-text">
-              Hola! I'm Jun Kim, an aspiring IT professional with a passion for creating innovative solutions. With a strong foundation in computer science and a keen eye for detail, I thrive on transforming ideas into reality through technology.
-            </p>
-            
-            <p className="about-text">
-              My journey in the tech world has been marked by a relentless pursuit of knowledge and a commitment to excellence. I believe in the power of collaboration and continuous learning, always seeking new challenges to expand my skill set.
-            </p>
-          </section>
-          
-          <section className="services-section">
-            <h2 className="section-title">What I'm Doing</h2>
-            
-            <div className="services-grid">
-              <div className="service-card">
-                <div className="service-icon">
-                  <div className="icon-container">
-                    <FaGraduationCap />
-                  </div>
-                </div>
-                <h3 className="service-title">Computer Science Degree</h3>
-                <p className="service-description">
-                  Senior Computer Science Student at Abilene Christian University.
-                </p>
-              </div>
-              
-              <div className="service-card">
-                <div className="service-icon">
-                  <div className="icon-container">
-                    <DiReact />
-                  </div>
-                </div>
-                <h3 className="service-title">Web Development</h3>
-                <p className="service-description">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-              
-              <div className="service-card">
-                <div className="service-icon">
-                  <div className="icon-container">
-                    <BsFillPencilFill />
-                  </div>
-                </div>
-                <h3 className="service-title">UI/UX Design</h3>
-                <p className="service-description">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-              
-              <div className="service-card">
-                <div className="service-icon">
-                  <div className="icon-container">
-                    <SiFirebase />
-                  </div>
-                </div>
-                <h3 className="service-title">Backend Development</h3>
-                <p className="service-description">
-                  High-performance backend services designed for scalability and seamless user experience.
-                </p>
-              </div>
-            </div>
-          </section>
-          
-          <section className="skills-section">
-            <h2 className="section-title">Skills</h2>
-            
-            <div className="skills-grid">
-              <div className="skills-track">
-                <div className="skill-card">
-                  <SiFlutter className="skill-icon flutter" />
-                </div>
-                
-                <div className="skill-card">
-                  <DiReact className="skill-icon react" />
-                </div>
-                
-                <div className="skill-card">
-                  <SiFirebase className="skill-icon firebase" />
-                </div>
-                
-                <div className="skill-card">
-                  <BsFillPencilFill className="skill-icon design" />
-                </div>
-                
-                <div className="skill-card">
-                  <FaPython className="skill-icon python" style={{ color: '#3776AB' }} />
-                </div>
-                
-                <div className="skill-card">
-                  <FaJsSquare className="skill-icon javascript" style={{ color: '#F7DF1E' }} />
-                </div>
-                
-                <div className="skill-card">
-                  <FaGitAlt className="skill-icon git" style={{ color: '#F05032' }} />
-                </div>
-                
-                <div className="skill-card">
-                  <SiJira className="skill-icon jira" style={{ color: '#0052CC' }} />
-                </div>
-                
-                <div className="skill-card">
-                  <SiPostman className="skill-icon postman" style={{ color: '#FF6C37' }} />
-                </div>
-
-                {/* Duplicate first few skills to make the animation loop seamlessly */}
-                <div className="skill-card">
-                  <SiFlutter className="skill-icon flutter" />
-                </div>
-                
-                <div className="skill-card">
-                  <DiReact className="skill-icon react" />
-                </div>
-                
-                <div className="skill-card">
-                  <SiFirebase className="skill-icon firebase" />
-                </div>
-                
-                <div className="skill-card">
-                  <BsFillPencilFill className="skill-icon design" />
-                </div>
-              </div>
-            </div>
-            
-            <div className="progress-bars">
-              <div className="progress-bar active"></div>
-              <div className="progress-bar"></div>
-            </div>
-          </section>
+            {activeSection === 'resume' && <ResumeSection />}
+            {activeSection === 'portfolio' && <PortfolioSection />}
+            {activeSection === 'photos' && <PhotosSection />}
+          </div>
         </div>
       </div>
     </div>
