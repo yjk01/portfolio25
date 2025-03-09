@@ -11,17 +11,17 @@ const PortfolioSection = () => {
     },
     {
       id: 2,
-      title: "E-commerce Application",
+      title: "Proxmox Homeserver",
       category: "Web & Mobile Development",
       image: "ecommerce-placeholder.jpg",
-      description: "A full-stack e-commerce platform with user authentication and payment processing."
+      description: "A Proxmox-based home server setup with a web interface for managing virtual machines and services."
     },
     {
       id: 3,
-      title: "Task Management App",
-      category: "Mobile Development",
+      title: "LZW / Huffman Compression",
+      category: "Web Development",
       image: "task-app-placeholder.jpg",
-      description: "A Flutter-based task management application with Firebase backend."
+      description: "A java console application that implements LZW and Huffman compression algorithms for efficient data storage and transmission."
     }
   ];
 

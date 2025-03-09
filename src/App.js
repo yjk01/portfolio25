@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { FaGithub, FaLinkedin, FaGoogle, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin,FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import logo from './Yejun_headshot.jpg';
 
 // Import section components
@@ -64,8 +64,6 @@ function App() {
             <div className="social-icons">
               <a href="https://www.linkedin.com/in/yejun-kim/" className="social-icon"><FaLinkedin /></a>
               <a href="https://github.com/yjk01" className="social-icon"><FaGithub /></a>
-              <a href="https://www.google.com/" className="social-icon"><FaGoogle /></a>
-              <a href="https://www.x.com/" className="social-icon"><FaTwitter /></a>
             </div>
           </div>
         </div>
