@@ -1,26 +1,20 @@
 import React from 'react';
+import huffman from '../photos/Huffman.jpg';
 
 const PortfolioSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Personal Portfolio",
-      category: "Web Development",
-      image: "portfolio-placeholder.jpg",
-      description: "A responsive personal portfolio website built with React."
+      title: "Proxmox Homeserver",
+      category: "Web & Mobile Development",
+      image: huffman,
+      description: "A Proxmox-based home server setup to self host applications and practice system administration fundementals."
     },
     {
       id: 2,
-      title: "Proxmox Homeserver",
-      category: "Web & Mobile Development",
-      image: "ecommerce-placeholder.jpg",
-      description: "A Proxmox-based home server setup with a web interface for managing virtual machines and services."
-    },
-    {
-      id: 3,
       title: "LZW / Huffman Compression",
       category: "Web Development",
-      image: "task-app-placeholder.jpg",
+      image: huffman, // Using the same image temporarily - should be replaced with a specific image
       description: "A java console application that implements LZW and Huffman compression algorithms for efficient data storage and transmission."
     }
   ];
@@ -41,7 +35,11 @@ const PortfolioSection = () => {
         {projects.map(project => (
           <div className="portfolio-item" key={project.id}>
             <div className="portfolio-img-container">
-              <img src={`/placeholder-images/${project.image}`} alt={project.title} className="portfolio-img" />
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="portfolio-img" 
+              />
               <div className="portfolio-overlay">
                 <div className="overlay-content">
                   <h3>{project.title}</h3>
