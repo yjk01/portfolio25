@@ -1,28 +1,28 @@
 import React from 'react';
-import photo1 from '../photos/photo_1.jpg';
-import photo2 from '../photos/photo_2.jpg';
-import photo3 from '../photos/photo_3.jpg';
-import photo4 from '../photos/photo_4.jpg';
-import photo5 from '../photos/photo_5.jpg';
-import photo6 from '../photos/photo_6.jpg';
-import photo7 from '../photos/photo_7.jpg';
-import photo8 from '../photos/photo_8.jpg';
-import photo9 from '../photos/photo_9.jpg';
-import photo10 from '../photos/photo_10.jpg';
+import photo12 from '../photos/photo_12.jpg';
+import photo13 from '../photos/photo_13.jpg';
+import photo14 from '../photos/photo_14.jpg';
+import photo15 from '../photos/photo_15.jpg';
+import photo16 from '../photos/photo_16.jpg';
+import photo17 from '../photos/photo_17.jpg';
+import photo18 from '../photos/photo_18.jpg';
+import photo19 from '../photos/photo_19.jpg';
+import photo20 from '../photos/photo_20.jpg';
+import photo21 from '../photos/photo_21.jpg';
 
 const PhotosSection = () => {
   // Example photo gallery data
   const photos = [
-    { id: 1, src: photo1, title: "Nice" },
-    { id: 2, src: photo2, title: "NIce" },
-    { id: 3, src: photo3, title: "NICe" },
-    { id: 4, src: photo4, title: "NICE" },
-    { id: 5, src: photo5, title: "Nicee" },
-    { id: 6, src: photo6, title: "NIcee" },
-    { id: 7, src: photo7, title: "NICee" },
-    { id: 8, src: photo8, title: "NICEe" },
-    { id: 9, src: photo9, title: "NICEEE" },
-    { id: 10, src: photo10, title: "nice" }
+    { id: 11, src: photo12, title: "Herman Lake, CO" },
+    { id: 12, src: photo13, title: "Mt. Evans, CO" },
+    { id: 13, src: photo14, title: "Longbeach, CA" },
+    { id: 14, src: photo15, title: "Abilene, TX" },
+    { id: 15, src: photo16, title: "Abilene, TX" },
+    { id: 16, src: photo17, title: "6942, South Korea" },
+    { id: 17, src: photo18, title: "Seoul, South Korea" },
+    { id: 18, src: photo19, title: "Incheon, South Korea" },
+    { id: 19, src: photo20, title: "Incheon, South Korea" },
+    { id: 20, src: photo21, title: "Incheon, South Korea" }
   ];
 
   return (
