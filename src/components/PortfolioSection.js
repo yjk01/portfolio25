@@ -16,6 +16,20 @@ const PortfolioSection = () => {
       category: "Web Development",
       image: huffman, // Using the same image temporarily - should be replaced with a specific image
       description: "A java console application that implements LZW and Huffman compression algorithms for efficient data storage and transmission."
+    },
+    {
+      id: 3,
+      title: "Cramvas",
+      category: "Web Development",
+      image: huffman, // Using the same image temporarily - should be replaced with a specific image
+      description: "A simple Web interface designed to help students study using quizzes from Canvas."
+    },
+    {
+      id: 4,
+      title: "Macro Tracker",
+      category: "Web Development",
+      image: huffman, // Using the same image temporarily - should be replaced with a specific image
+      description: "A kotlin based android app designed to track personal macros through out the day."
     }
   ];
 

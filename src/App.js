@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { FaGithub, FaLinkedin,FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import logo from './Yejun_headshot.jpg';
+import logo1 from './memoji.png';
 
 // Import section components
 import AboutSection from './components/AboutSection';
@@ -10,6 +11,7 @@ import PortfolioSection from './components/PortfolioSection';
 import PhotosSection from './components/PhotosSection';
 import ServicesSection from './components/ServicesSection';
 import SkillsSection from './components/SkillsSection';
+import Avatar3D from './components/Avatar3D';
 
 function App() {
   // State to track the active section
@@ -34,10 +36,9 @@ function App() {
       <div className="portfolio-container">
         <div className="sidebar">
           <div className="profile-container">
-            <div className="avatar-container">
-              <img src={logo} alt="Profile" className="avatar" />
-              <div className="online-indicator"></div>
-            </div>
+            {/* Replace regular avatar with 3D avatar */}
+            <Avatar3D imageUrl={logo1} />
+            
             <h2 className="name">Jun Kim</h2>
             <p className="profession">Aspiring IT Professional</p>
             
