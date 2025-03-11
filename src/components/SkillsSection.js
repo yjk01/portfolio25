@@ -25,34 +25,9 @@ const SkillsSection = () => {
     containerWidth: 0,
     scrollableDistance: 0
   });
-
+  
   // Skills data
   const skills = [
-    { 
-      icon: <DiReact className="skill-icon react" />, 
-      name: "React", 
-      url: "https://reactjs.org/" 
-    },
-    { 
-      icon: <FaJsSquare className="skill-icon javascript" style={{ color: '#F7DF1E' }} />, 
-      name: "JavaScript", 
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" 
-    },
-    { 
-      icon: <SiExpress className="skill-icon express" style={{ color: '#000000' }} />, 
-      name: "Express", 
-      url: "https://expressjs.com/" 
-    },
-    { 
-      icon: <FaNodeJs className="skill-icon nodejs" style={{ color: '#339933' }} />, 
-      name: "Node.js", 
-      url: "https://nodejs.org/" 
-    },
-    { 
-      icon: <SiAdobephotoshop className="skill-icon photoshop" style={{ color: '#31A8FF' }} />, 
-      name: "Photoshop", 
-      url: "https://www.adobe.com/products/photoshop.html" 
-    },
     { 
       icon: <FaPython className="skill-icon python" style={{ color: '#3776AB' }} />, 
       name: "Python", 
@@ -64,14 +39,29 @@ const SkillsSection = () => {
       url: "https://isocpp.org/" 
     },
     { 
+      icon: <DiReact className="skill-icon react" style={{color: '#61DAFB'}} />, 
+      name: "React", 
+      url: "https://reactjs.org/" 
+    },
+    { 
+      icon: <FaJsSquare className="skill-icon javascript" style={{ color: '#F7DF1E' }} />, 
+      name: "JavaScript", 
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" 
+    },
+    { 
+      icon: <SiExpress className="skill-icon express" style={{ color: '#FFFFFF' }} />, 
+      name: "Express", 
+      url: "https://expressjs.com/" 
+    },
+    { 
+      icon: <FaNodeJs className="skill-icon nodejs" style={{ color: '#339933' }} />, 
+      name: "Node.js", 
+      url: "https://nodejs.org/" 
+    },
+    { 
       icon: <DiJava className="skill-icon java" style={{ color: '#007396' }} />, 
       name: "Java", 
       url: "https://www.java.com/" 
-    },
-    { 
-      icon: <TbSql className="skill-icon sql" style={{ color: '#4479A1' }} />, 
-      name: "SQL", 
-      url: "https://www.w3schools.com/sql/" 
     },
     { 
       icon: <SiPostgresql className="skill-icon postgres" style={{ color: '#336791' }} />, 
@@ -102,6 +92,11 @@ const SkillsSection = () => {
       icon: <SiPostman className="skill-icon postman" style={{ color: '#FF6C37' }} />, 
       name: "Postman", 
       url: "https://www.postman.com/" 
+    },
+    { 
+      icon: <SiAdobephotoshop className="skill-icon photoshop" style={{ color: '#31A8FF' }} />, 
+      name: "Photoshop", 
+      url: "https://www.adobe.com/products/photoshop.html" 
     }
   ];
   

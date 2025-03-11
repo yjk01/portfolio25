@@ -7,7 +7,7 @@ import { SiProxmox, SiMongodb, SiJira } from 'react-icons/si';
 const ResumeSection = () => {
   return (
     <section className="resume-section">
-      <h2 className="section-title">Resume</h2>
+      <h2 className="section-title">Experience</h2>
       <div className="underline"></div>
       
       <div className="resume-container">
@@ -22,8 +22,14 @@ const ResumeSection = () => {
               <h4>Bachelor of Science in Computer Science</h4>
               <h5>Abilene Christian University</h5>
               <p className="timeline-date">May 2025 (Anticipated)</p>
-              <p>Minoring in Business Administration, GPA: 3.94</p>
-              <p>Relevant coursework: Data Structures, Algorithms, Web & Mobile App Development, Agile Software Engineering, Databases, Data Mining.</p>
+              <ul>
+                <li>GPA: 3.94</li>
+                <li>Dean's List: Fall 2020 - Present</li>
+                <li>Minor: Business Administration</li>
+                <li>Relevant Coursework: Programming 2: Data Structures, Object Oriented Programming, Design and Analysis of Algorithms,
+                Web App Development, Mobible App Development, Software Engineering: Agile Methods, Intro to DBMS, Human Computer Interaction, Data Mining,
+                Programming Languages, Intro to AI</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -39,7 +45,10 @@ const ResumeSection = () => {
               <h4>Student System Administrator</h4>
               <h5>Abilene Christian University</h5>
               <p className="timeline-date">Jan 2020 - Present</p>
-              <p>Managed over 500 campus devices using JAMF & Apple School Manager. Provided technical support for 200+ faculty & staff and administered Active Directory & Google Workspace accounts.</p>
+              <ul>
+                <li>Deployed and Managed over 300+ Dell and Apple devices on campus using tools such as KACE, JAMF, and Apple School Manager.</li>
+                <li>Provided technical support for 200+ faculty & staff and administered Active Directory & Google Workspace accounts.</li>
+              </ul>
             </div>
           </div>
           
@@ -49,7 +58,10 @@ const ResumeSection = () => {
               <h4>Student Network Administrator</h4>
               <h5>Abilene Christian University</h5>
               <p className="timeline-date">July 2023 - Present</p>
-              <p>Configured network ports, resolved Layer 1 & Layer 2 issues, installed & maintained network hardware, and provided VoIP support for Zoom (Yealink) phones.</p>
+              <ul>
+                <li>Configured and activated network ports, troubleshooting Layer 1 and Layer 2 connectivity issues using network switches, cable tracing tools, and network testers.</li>
+                <li>Installed, maintained, and decommisioned network hardware, including wireless access points, structured cabling, and UPS battery backup systems.</li>
+              </ul>
             </div>
           </div>
           
@@ -59,29 +71,11 @@ const ResumeSection = () => {
               <h4>Information Technology Intern</h4>
               <h5>Kodiak Building Partners</h5>
               <p className="timeline-date">Jun 2024 - Aug 2024</p>
-              <p>Developed key functionalities & documentation for an AI chatbot, integrated Jira API for ticketing, set up Power Automate workflows, and imaged systems with SmartDeploy.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div className="resume-section-header">
-          <h3>Projects</h3>
-        </div>
-        
-        <div className="timeline">
-          <div className="timeline-item">
-            <div className="timeline-dot"><DiJava /></div>
-            <div className="timeline-content">
-              <h4>File Compression/Archive Utility</h4>
-              <p>Developed a Java-based console application using Huffman & LZW Encoding for compression. Used Maven for build automation and Git for version control.</p>
-            </div>
-          </div>
-          
-          <div className="timeline-item">
-            <div className="timeline-dot"><SiProxmox /></div>
-            <div className="timeline-content">
-              <h4>Home Lab Virtualization</h4>
-              <p>Built a home lab with Proxmox, managing VMs, Active Directory, DNS, DHCP, Samba, pfSense firewall, VLAN segmentation, and Grafana for monitoring.</p>
+              <ul>
+                <li>Developed key functionalities and comprehensive documentation for an IT support AI chatbot.</li>
+                <li>Configured Azure authentication, intergrated Jira API for ticket handling, and set up Power Automate flows to support future automation and deployment.</li>
+                <li>Imaged 40+ devices to meet company standards, maintaining consistency and system integrity by utlizing tools like SmartDeploy and Jira.</li>
+              </ul>
             </div>
           </div>
         </div>

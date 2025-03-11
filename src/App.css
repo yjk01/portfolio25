@@ -119,8 +119,8 @@ body {
   opacity: 1;
 }
 
+/* Enhanced online indicator with pulsing effect */
 .online-indicator {
-  /* Adjust position to match the new structure */
   position: absolute;
   bottom: 5px;
   right: 5px;
@@ -130,6 +130,25 @@ body {
   border-radius: 50%;
   border: 2px solid #191919;
   z-index: 2;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 rgba(76, 175, 80, 0.4);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
 }
 
 .name {

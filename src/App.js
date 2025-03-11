@@ -17,9 +17,8 @@ function App() {
   // State to track the active section
   const [activeSection, setActiveSection] = useState('about');
 
-  // Function to handle navigation clicks
   const handleNavClick = (e, section) => {
-    e.preventDefault(); // Prevent default anchor behavior
+    e.preventDefault();
     setActiveSection(section);
   };
 
@@ -36,7 +35,6 @@ function App() {
       <div className="portfolio-container">
         <div className="sidebar">
           <div className="profile-container">
-            {/* Replace regular avatar with 3D avatar */}
             <Avatar3D imageUrl={logo1} />
             
             <h2 className="name">Jun Kim</h2>
@@ -52,7 +50,7 @@ function App() {
               <div className="contact-item">
                 <FaPhone className="icon" />
                 <div className="contact-label">PHONE</div>
-                <div className="contact-value">+1 662-298-6132</div>
+                <div className="contact-value">+1 ***-***-****</div>
               </div>
               
               <div className="contact-item">
@@ -76,7 +74,7 @@ function App() {
                 <a href="#" onClick={(e) => handleNavClick(e, 'about')}>About</a>
               </li>
               <li className={activeSection === 'resume' ? 'active' : ''}>
-                <a href="#" onClick={(e) => handleNavClick(e, 'resume')}>Resume</a>
+                <a href="#" onClick={(e) => handleNavClick(e, 'resume')}>Experience</a>
               </li>
               <li className={activeSection === 'portfolio' ? 'active' : ''}>
                 <a href="#" onClick={(e) => handleNavClick(e, 'portfolio')}>Portfolio</a>
