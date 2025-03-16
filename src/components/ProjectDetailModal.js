@@ -8,12 +8,16 @@ import { FaTimes } from 'react-icons/fa';
 import proxmoxHomeserverMd from '../content/projects/proxmox-homeserver.md';
 import aiChatbotMd from '../content/projects/ai-chatbot.md';
 import compressionAlgorithmsMd from '../content/projects/compression-algorithms.md';
+import cramvasMd from '../content/projects/cramvas.md';
+import macroTrackerMd from '../content/projects/macro-tracker.md';
 
 // Map of project IDs to their markdown content
 const PROJECT_CONTENT = {
   'proxmox-homeserver': proxmoxHomeserverMd,
   'ai-chatbot': aiChatbotMd,
   'compression-algorithms': compressionAlgorithmsMd,
+  'cramvas':cramvasMd,
+  'macro-tracker': macroTrackerMd
   // Add other projects as they are created
 };
 

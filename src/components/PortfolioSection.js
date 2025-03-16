@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import huffman from '../photos/Huffman.jpg';
+import huffman from '../photos/portfolio_tn/Huffman.jpg';
+import ai from '../photos/portfolio_tn/Aichatbot.jpg';
+import cramvas from '../photos/portfolio_tn/Cramvas.jpg';
+import macro from '../photos/portfolio_tn/Macrotrack.jpg';
+import proxmox from '../photos/portfolio_tn/Proxmox.jpg';
 import ProjectDetailModal from './ProjectDetailModal';
 
 const PortfolioSection = () => {
@@ -13,14 +17,14 @@ const PortfolioSection = () => {
       id: 'proxmox-homeserver',
       title: "Proxmox Homeserver",
       category: "System Administration",
-      image: huffman,
+      image: proxmox,
       description: "A Proxmox-based home server setup to self host applications and practice system administration fundamentals."
     },
     {
       id: 'ai-chatbot',
       title: "AI Chatbot",
       category: "AI & Automation",
-      image: huffman,
+      image: ai,
       description: "A Microsoft Copilot Studio based AI chatbot for IT services. Utilized Azure, Jira API, and Power Automate."
     },
     {
@@ -34,14 +38,14 @@ const PortfolioSection = () => {
       id: 'cramvas',
       title: "Cramvas",
       category: "Web Development",
-      image: huffman,
+      image: cramvas,
       description: "A simple Web interface designed to help students study using quizzes from Canvas."
     },
     {
       id: 'macro-tracker',
       title: "Macro Tracker",
       category: "Mobile Development",
-      image: huffman,
+      image: macro,
       description: "A kotlin based android app designed to track personal macros through out the day."
     }
   ];
