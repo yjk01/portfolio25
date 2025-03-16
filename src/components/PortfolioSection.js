@@ -1,37 +1,70 @@
-import React from 'react';
-import huffman from '../photos/Huffman.jpg';
+import React, { useState } from 'react';
+import huffman from '../photos/portfolio_tn/Huffman.jpg';
+import ai from '../photos/portfolio_tn/Aichatbot.jpg';
+import cramvas from '../photos/portfolio_tn/Cramvas.jpg';
+import macro from '../photos/portfolio_tn/Macrotrack.jpg';
+import proxmox from '../photos/portfolio_tn/Proxmox.jpg';
+import ProjectDetailModal from './ProjectDetailModal';
 
 const PortfolioSection = () => {
+  // State for the modal
+  const [activeProject, setActiveProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  // Project data - this acts as a registry for our markdown files
   const projects = [
     {
-      id: 1,
+      id: 'proxmox-homeserver',
       title: "Proxmox Homeserver",
-      category: "Web & Mobile Development",
-      image: huffman,
-      description: "A Proxmox-based home server setup to self host applications and practice system administration fundementals."
+      category: "System Administration",
+      image: proxmox,
+      description: "A Proxmox-based home server setup to self host applications and practice system administration fundamentals."
     },
     {
-      id: 2,
+      id: 'ai-chatbot',
+      title: "AI Chatbot",
+      category: "AI & Automation",
+      image: ai,
+      description: "A Microsoft Copilot Studio based AI chatbot for IT services. Utilized Azure, Jira API, and Power Automate."
+    },
+    {
+      id: 'compression-algorithms',
       title: "LZW / Huffman Compression",
-      category: "Web Development",
-      image: huffman, // Using the same image temporarily - should be replaced with a specific image
+      category: "Software Development",
+      image: huffman,
       description: "A java console application that implements LZW and Huffman compression algorithms for efficient data storage and transmission."
     },
     {
-      id: 3,
+      id: 'cramvas',
       title: "Cramvas",
       category: "Web Development",
-      image: huffman, // Using the same image temporarily - should be replaced with a specific image
+      image: cramvas,
       description: "A simple Web interface designed to help students study using quizzes from Canvas."
     },
     {
-      id: 4,
+      id: 'macro-tracker',
       title: "Macro Tracker",
-      category: "Web Development",
-      image: huffman, // Using the same image temporarily - should be replaced with a specific image
+      category: "Mobile Development",
+      image: macro,
       description: "A kotlin based android app designed to track personal macros through out the day."
     }
   ];
+
+  // Open modal with specific project
+  const openProjectDetail = (projectId) => {
+    setActiveProject(projectId);
+    setIsModalOpen(true);
+    // Prevent body scrolling when modal is open
+    document.body.style.overflow = 'hidden';
+  };
+
+  // Close modal
+  const closeProjectDetail = () => {
+    setIsModalOpen(false);
+    setActiveProject(null);
+    // Re-enable body scrolling
+    document.body.style.overflow = 'auto';
+  };
 
   return (
     <section className="portfolio-section">
@@ -42,12 +75,16 @@ const PortfolioSection = () => {
         <button className="filter-item active">All</button>
         <button className="filter-item">Web</button>
         <button className="filter-item">Mobile</button>
-        <button className="filter-item">Design</button>
+        <button className="filter-item">System</button>
       </div>
       
       <div className="portfolio-grid">
         {projects.map(project => (
-          <div className="portfolio-item" key={project.id}>
+          <div 
+            className="portfolio-item" 
+            key={project.id}
+            onClick={() => openProjectDetail(project.id)}
+          >
             <div className="portfolio-img-container">
               <img 
                 src={project.image} 
@@ -68,6 +105,13 @@ const PortfolioSection = () => {
           </div>
         ))}
       </div>
+      
+      {/* Project Detail Modal */}
+      <ProjectDetailModal 
+        isOpen={isModalOpen}
+        onClose={closeProjectDetail}
+        projectId={activeProject}
+      />
     </section>
   );
 };
