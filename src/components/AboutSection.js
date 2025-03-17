@@ -12,7 +12,7 @@ const AboutSection = () => {
       </p>
       
       <p className="about-text">
-      My experience as a Student System and Network Administrator has reinforced my technical expertise and problem-solving skills. Managing IT infrastructure, assisting users, and working with automation tools have given me valuable hands-on experience. My internship further strengthened my ability to adapt and innovate in fast-paced environments, fueling my passion for technology and its real-world applications.
+      My experience as a Student System and Network Administrator has reinforced my technical expertise and problem-solving skills. Managing IT infrastructure, assisting users, and working with automation tools have given me valuable hands-on experience. My IT internship further strengthened my ability to adapt and innovate in fast-paced environments, fueling my passion for technology and its real-world applications.
 
 
 

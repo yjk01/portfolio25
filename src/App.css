@@ -203,7 +203,7 @@ body {
 }
 
 .social-icon:hover {
-  color: #ffd700;
+  color: #01abaa;
 }
 
 /* Main Content Styles */
@@ -240,7 +240,7 @@ body {
 }
 
 .navigation li a:hover {
-  color: #ffd700;
+  color: #01abaa;
 }
 
 .section-title {
@@ -252,7 +252,7 @@ body {
 .underline {
   width: 50px;
   height: 3px;
-  background-color: #ffd700;
+  background-color: #01abaa;
   margin-bottom: 25px;
 }
 
@@ -409,7 +409,7 @@ body {
   position: absolute;
   top: 0;
   height: 100%;
-  background-color: #ffd700;
+  background-color: #01abaa;
   border-radius: 4px;
   cursor: grab;
   transition: background-color 0.2s;
@@ -442,7 +442,7 @@ body {
 
 .progress-bar-thumb {
   height: 100%;
-  background-color: #ffd700;
+  background-color: #01abaa;
   border-radius: 2px;
   position: relative;
   min-width: 5%;
@@ -456,7 +456,7 @@ body {
   top: -5px;
   width: 14px;
   height: 14px;
-  background-color: #ffd700;
+  background-color: #01abaa;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   cursor: grab;
@@ -524,7 +524,7 @@ body {
 
 .resume-section-header h3 {
   font-size: 20px;
-  color: #ffd700;
+  color: #01abaa;
 }
 
 .timeline {
@@ -558,12 +558,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffd700;
+  color: #01abaa;
   font-size: 10px;
 }
 
 .timeline-content {
-  background-color: #232323;
+  /* background-color: #232323; */
   padding: 20px;
   border-radius: 8px;
 }
@@ -581,7 +581,7 @@ body {
 
 .timeline-date {
   font-size: 12px;
-  color: #ffd700;
+  color: #01abaa;
   margin-bottom: 10px;
 }
 
@@ -599,7 +599,7 @@ body {
 }
 
 .certification-icon {
-  color: #ffd700;
+  color: #01abaa;
   font-size: 20px;
   margin-right: 15px;
 }
@@ -634,7 +634,7 @@ body {
 
 .filter-item.active,
 .filter-item:hover {
-  color: #ffd700;
+  color: #01abaa;
 }
 
 .portfolio-grid {
@@ -701,7 +701,7 @@ body {
 }
 
 .overlay-content p {
-  color: #ffd700;
+  color: #01abaa;
   font-size: 14px;
 }
 
@@ -848,7 +848,7 @@ body {
 
 .modal-title {
   font-size: 22px;
-  color: #ffd700;
+  color: #01abaa;
   margin: 0;
 }
 
@@ -902,7 +902,7 @@ body {
 
 .tech-tag {
   background-color: #2a2a2a;
-  color: #ffd700;
+  color: #01abaa;
   padding: 5px 12px;
   border-radius: 15px;
   font-size: 14px;
@@ -931,7 +931,7 @@ body {
 .markdown-content h2 {
   font-size: 22px;
   margin: 30px 0 15px;
-  color: #ffd700;
+  color: #01abaa;
 }
 
 .markdown-content h3,
@@ -983,7 +983,7 @@ body {
 }
 
 .markdown-content blockquote {
-  border-left: 4px solid #ffd700;
+  border-left: 4px solid #01abaa;
   padding-left: 15px;
   margin: 20px 0;
   color: #aaa;
