@@ -38,7 +38,7 @@ function App() {
             <Avatar3D imageUrl={logo1} />
             
             <h2 className="name">Jun Kim</h2>
-            <p className="profession">Aspiring IT Professional</p>
+            <p className="profession">IT Professional</p>
             
             <div className="contact-info">
               <div className="contact-item">

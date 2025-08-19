@@ -18,7 +18,7 @@ const ServicesSection = () => {
           </div>
           <h3 className="service-title">Computer Science Degree</h3>
           <p className="service-description">
-            Senior Computer Science Student at Abilene Christian University.
+             Computer Science Graduate from Abilene Christian University.
           </p>
         </div>
         

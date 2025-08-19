@@ -23,8 +23,8 @@ const ResumeSection = () => {
               <h5>Abilene Christian University</h5>
               <p className="timeline-date">May 2025 (Anticipated)</p>
               <ul>
-                <li>GPA: 3.94</li>
-                <li>Dean's List: Fall 2020 - Present</li>
+                <li>GPA: 3.95</li>
+                <li>Dean's List: Fall 2020 - Spring 2025</li>
                 <li>Minor: Business Administration</li>
                 <li>Relevant Coursework: Programming 2: Data Structures, Object Oriented Programming, Design and Analysis of Algorithms,
                 Web App Development, Mobible App Development, Software Engineering: Agile Methods, Intro to DBMS, Human Computer Interaction, Data Mining,
@@ -42,9 +42,20 @@ const ResumeSection = () => {
           <div className="timeline-item">
             <div className="timeline-dot"><FaServer /></div>
             <div className="timeline-content">
+              <h4>DCO Tech</h4>
+              <h5>Amazon Web Services</h5>
+              <p className="timeline-date">June 2025 - Present</p>
+              <ul>
+              </ul>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-dot"><FaServer /></div>
+            <div className="timeline-content">
               <h4>Student System Administrator</h4>
               <h5>Abilene Christian University</h5>
-              <p className="timeline-date">Jan 2020 - Present</p>
+              <p className="timeline-date">Jan 2020 - May 2025</p>
               <ul>
                 <li>Deployed and Managed over 300+ Dell and Apple devices on campus using tools such as KACE, JAMF, and Apple School Manager.</li>
                 <li>Provided technical support for 200+ faculty & staff and administered Active Directory & Google Workspace accounts.</li>
@@ -57,7 +68,7 @@ const ResumeSection = () => {
             <div className="timeline-content">
               <h4>Student Network Administrator</h4>
               <h5>Abilene Christian University</h5>
-              <p className="timeline-date">July 2023 - Present</p>
+              <p className="timeline-date">July 2023 - May 2025</p>
               <ul>
                 <li>Configured and activated network ports, troubleshooting Layer 1 and Layer 2 connectivity issues using network switches, cable tracing tools, and network testers.</li>
                 <li>Installed, maintained, and decommisioned network hardware, including wireless access points, structured cabling, and UPS battery backup systems.</li>
